@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rBody;
+    public float jumpVelocity;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +16,9 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Hi");
+            rBody.velocity = Vector2.up * jumpVelocity;
         }
     }
 
