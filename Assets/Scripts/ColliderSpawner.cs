@@ -1,23 +1,25 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ColliderController : MonoBehaviour
+public class ColliderSpawner : MonoBehaviour
 {
     public GameObject objectToSpawn;
-    // Start is called before the first frame update
-    void Start()
+    public float height;
+    public float time;
+
+    private void Start()
     {
-        
+        StartCoroutine(SpawnObject(time));
     }
 
-    // Spawn Object is created for spawning the collection of colliders as object.
-    void SpawnObject()
+    public IEnumerator SpawnObject(float time)
     {
-        GameObject newObject = Instantiate(objectToSpawn);
-    }
-    void Update()
-    {
-        Invoke("SpawnObject", 2);
+        while (true)
+        {
+            Instantiate(objectToSpawn, new Vector3(3, Random.Range(-height, height), 0), Quaternion.identity);
+            yield return new WaitForSeconds(time);
+
+        }
+
     }
 }

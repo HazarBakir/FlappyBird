@@ -1,25 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public int pointCounter;
     Rigidbody2D rBody;
     public float jumpVelocity;
+    public bool birdAlive;
+    public TMP_Text point_counter;
 
-    // Start is called before the first frame update
     void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
+        birdAlive = true;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             rBody.velocity = Vector2.up * jumpVelocity;
         }
+        if (birdAlive != true)
+        {
+
+            SceneManager.LoadScene("GameOverScreen");
+        }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (birdAlive && collision.gameObject.CompareTag("Collision"))
+        {
+            birdAlive = false;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (birdAlive && collision.tag == "PointLine")
+        {
+            pointCounter +=1;
+            point_counter.SetText(pointCounter.ToString());
+        }
+    }
+    
 
 }
