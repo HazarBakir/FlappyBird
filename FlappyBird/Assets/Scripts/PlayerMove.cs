@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     {
         rBody = GetComponent<Rigidbody2D>();
         birdAlive = true;
+        Jump();
 
     }
 
@@ -22,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            rBody.velocity = Vector2.up * jumpVelocity;
+            Jump();
         }
     }
 
@@ -41,6 +42,9 @@ public class PlayerMove : MonoBehaviour
             point_counter.SetText(pointCounter.ToString());
         }
     }
-    
+    void Jump()
+    {
+        rBody.velocity = Vector2.up * jumpVelocity;
+    }
 
 }
