@@ -16,7 +16,6 @@ public class PlayerMove : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         birdAlive = true;
         Jump();
-
     }
 
     void Update()
