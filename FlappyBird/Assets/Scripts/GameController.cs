@@ -7,11 +7,6 @@ public class GameController : MonoBehaviour
     public PlayerMove player;
     public GameObject GameStopMenu;
     private bool isGamePaused = false;
-
-    private void Start()
-    {
-        Time.timeScale = 1;
-    }
     public void Initialize()
     {
         player = new PlayerMove();
@@ -27,14 +22,17 @@ public class GameController : MonoBehaviour
 
     public void ShowGameOverUI()
     {
+        ResumeGame();
         SceneManager.LoadScene("GameOverScreen");
     }
     public void LoadMainScene()
     {
+        ResumeGame();
         SceneManager.LoadScene("MainMenu");
     }
     public void LoadGameScene()
     {
+        ResumeGame();
         SceneManager.LoadScene("FlappyBirdScene");
     }
     public void QuitGame()
@@ -61,5 +59,10 @@ public class GameController : MonoBehaviour
             }
 
         }
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        isGamePaused = false;
     }
 }
