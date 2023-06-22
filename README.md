@@ -29,22 +29,23 @@ This project has been developed to create a custom version of the popular Flappy
 </ul>
 
 <h3>Installation</h3>
-<ul class="class_2">
-  <il>Download or clone this project from GitHub:```git clone https://github.com/YourUsername/FlappyBird.git```</il>
-  <il>Open the Unity Editor.</il>
-  <il>Select "Open Project" and specify the downloaded project folder.</il>
-  <il>View and run the project files in the Unity Editor.</il>
-</ul>
+<ol class="class_2">
+  <li>Download or clone this project from GitHub:`</li>
+  ```git clone https://github.com/YourUsername/FlappyBird.git``
+  <li>Open the Unity Editor.</li>
+  <li>Select "Open Project" and specify the downloaded project folder.</li>
+  <li>View and run the project files in the Unity Editor.</li>
+</ol>
 
 <h3>Contribution</h3>
 <ul class="class_3">
-  <il>Fork This Project and create a local copy.</il>
-  <il>Create a new branch for your changes:</il>
+  <li>Fork This Project and create a local copy.</li>
+  <li>Create a new branch for your changes:</li>
   git checkout -b new-feature
-  <il>Make your modifications and commit them:</il>
+  <li>Make your modifications and commit them:</li>
   git commit -m 'Added new feature'
-  <il> Merge your new branch with the main project branch.</il>
-  <il>Create a pull request to submit your forked repository back to the original project.</il>
+  <li> Merge your new branch with the main project branch.</li>
+  <li>Create a pull request to submit your forked repository back to the original project.</li>
 </ul>
 
 <h3>Contact</h3>
