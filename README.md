@@ -31,7 +31,7 @@ This project has been developed to create a custom version of the popular Flappy
 <h3>Installation</h3>
 <ol class="class_2">
   <li>Download or clone this project from GitHub:`</li>
-  ```git clone https://github.com/YourUsername/FlappyBird.git``
+  <pre> <code> git clone https://github.com/HazarBakir/FlappyBird.git </code> </pre>
   <li>Open the Unity Editor.</li>
   <li>Select "Open Project" and specify the downloaded project folder.</li>
   <li>View and run the project files in the Unity Editor.</li>
@@ -41,9 +41,9 @@ This project has been developed to create a custom version of the popular Flappy
 <ul class="class_3">
   <li>Fork This Project and create a local copy.</li>
   <li>Create a new branch for your changes:</li>
-  git checkout -b new-feature
+  <pre> <code>  git checkout -b new-feature </code> </pre>
   <li>Make your modifications and commit them:</li>
-  git commit -m 'Added new feature'
+  <pre> <code>  git commit -m 'Added new feature' </code> </pre>
   <li> Merge your new branch with the main project branch.</li>
   <li>Create a pull request to submit your forked repository back to the original project.</li>
 </ul>
