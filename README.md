@@ -29,12 +29,12 @@ This project has been developed to create a custom version of the popular Flappy
 </ul>
 
 <h3>Installation</h3>
-<ul>
+<ul1>
   <il>Download or clone this project from GitHub:```git clone https://github.com/YourUsername/FlappyBird.git```</il>
   <il>Open the Unity Editor.</il>
   <il>Select "Open Project" and specify the downloaded project folder.</il>
   <il>View and run the project files in the Unity Editor.</il>
-</ul>
+</ul1>
 
 <h3>Contribution</h3>
 <ul>
