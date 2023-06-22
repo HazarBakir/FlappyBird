@@ -7,6 +7,8 @@ public class GameController : MonoBehaviour
     public PlayerMove player;
     public GameObject GameStopMenu;
     private bool isGamePaused = false;
+    public GameObject resumebutton;
+    public GameObject pausebutton;
     public void Initialize()
     {
         player = new PlayerMove();
@@ -48,12 +50,16 @@ public class GameController : MonoBehaviour
                 Time.timeScale = 1f;
                 isGamePaused = false;
                 GameStopMenu.SetActive(false);
+                resumebutton.SetActive(true);
+                pausebutton.SetActive(false);
             }
             else
             {
                 Time.timeScale = 0f;
                 isGamePaused = true;
                 GameStopMenu.SetActive(true);
+                resumebutton.SetActive(false);
+                pausebutton.SetActive(true);
 
 
             }
