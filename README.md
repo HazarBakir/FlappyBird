@@ -1,5 +1,4 @@
 # FlappyBird
-Classical FlappyBird Game but i made it !
 ![resim](https://github.com/HazarBakir/FlappyBird/assets/92859817/22fbe3e3-4abf-4a9c-a873-c3cd3bf47ac5)
 
 <h1>Flappy Bird</h1>
