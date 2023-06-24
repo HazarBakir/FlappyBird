@@ -38,6 +38,10 @@ public class PlayerMove : MonoBehaviour
         if (birdAlive && collision.tag == "PointLine")
         {
             pointCounter +=1;
+            if (pointCounter > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", pointCounter);
+            }
             point_counter.SetText(pointCounter.ToString());
         }
     }

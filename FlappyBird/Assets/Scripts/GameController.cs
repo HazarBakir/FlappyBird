@@ -60,8 +60,6 @@ public class GameController : MonoBehaviour
                 GameStopMenu.SetActive(true);
                 resumebutton.SetActive(false);
                 pausebutton.SetActive(true);
-
-
             }
 
         }
