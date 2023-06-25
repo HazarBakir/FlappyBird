@@ -42,6 +42,7 @@ public class PlayerMove : MonoBehaviour
             {
                 PlayerPrefs.SetInt("HighScore", pointCounter);
             }
+            PlayerPrefs.SetInt("Score", pointCounter);
             point_counter.SetText(pointCounter.ToString());
         }
     }
