@@ -46,6 +46,3 @@ This project has been developed to create a custom version of the popular Flappy
   <li> Merge your new branch with the main project branch.</li>
   <li>Create a pull request to submit your forked repository back to the original project.</li>
 </ul>
-
-<h3>Contact</h3>
-If you have any questions, suggestions, or feedback, please feel free to contact me via email: hazar_bakir@protonmail.com.
