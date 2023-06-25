@@ -38,6 +38,11 @@ public class GameController : MonoBehaviour
         ResumeGame();
         SceneManager.LoadScene("FlappyBirdScene");
     }
+    public void LoadOptionScene()
+    {
+        ResumeGame();
+        SceneManager.LoadScene("Options");
+    }
     public void QuitGame()
     {
         Application.Quit();
