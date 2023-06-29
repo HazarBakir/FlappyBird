@@ -20,7 +20,7 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&& Time.timeScale == 1)
         {
             Jump();
         }

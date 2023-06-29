@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     private bool isGamePaused = false;
     public GameObject resumebutton;
     public GameObject pausebutton;
+
     public void Initialize()
     {
         player = new PlayerMove();
@@ -37,11 +38,6 @@ public class GameController : MonoBehaviour
     {
         ResumeGame();
         SceneManager.LoadScene("FlappyBirdScene");
-    }
-    public void LoadOptionScene()
-    {
-        ResumeGame();
-        SceneManager.LoadScene("Options");
     }
     public void QuitGame()
     {
