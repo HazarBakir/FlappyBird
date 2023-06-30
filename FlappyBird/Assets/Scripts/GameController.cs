@@ -2,10 +2,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class GameController : MonoBehaviour
 {
     public PlayerMove player;
+    public MusicVolumeSetter music;
     public GameObject GameStopMenu;
     private bool isGamePaused = false;
     public GameObject resumebutton;
@@ -14,14 +17,23 @@ public class GameController : MonoBehaviour
     public void Initialize()
     {
         player = new PlayerMove();
+        music = new MusicVolumeSetter();
     }
     private void Update()
     {
         StopTheGame();
         if (!player.birdAlive)
         {
-            ShowGameOverUI();
+            music.NoMusic();
+            StartCoroutine(GameOverDelay());
         }
+    }
+
+    private IEnumerator GameOverDelay()
+    {
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+
+        ShowGameOverUI(); // Transition to the game over UI or another scene
     }
 
     public void ShowGameOverUI()

@@ -9,7 +9,11 @@ public class PlayerMove : MonoBehaviour
     public float jumpVelocity;
     public bool birdAlive;
     public TMP_Text point_counter;
+    public CircleCollider2D circleCollider;
+    public MonoBehaviour myCodeComponent;
 
+    [SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource deathSoundEffect;
 
     void Start()
     {
@@ -23,6 +27,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetMouseButtonDown(0)&& Time.timeScale == 1)
         {
             Jump();
+            jumpSoundEffect.Play();
         }
     }
 
@@ -31,6 +36,10 @@ public class PlayerMove : MonoBehaviour
         if (birdAlive && collision.gameObject.CompareTag("Collision"))
         {
             birdAlive = false;
+            circleCollider.enabled = false;
+            deathSoundEffect.Play();
+            Jump();
+            myCodeComponent.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,6 +58,9 @@ public class PlayerMove : MonoBehaviour
     void Jump()
     {
         rBody.velocity = Vector2.up * jumpVelocity;
+        //jumpSoundEffect.Play();
+        // made this comment because i use this function another place without sfx sound...
+
     }
 
 }
