@@ -25,6 +25,7 @@ This project has been developed to create a custom version of the popular Flappy
 <ul class="class_1">
   <li>Unity 3D Game Engine</li>
   <li>C# Programming Language</li>
+  <li>Unity Version : 2021.3.23f1 </li>
 </ul>
 
 <h3>Installation</h3>
