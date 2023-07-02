@@ -5161,6 +5161,8 @@ MonoBehaviour:
   audioSource: {fileID: 1273487422}
   jumpSoundEffect: {fileID: 1512181766}
   deathSoundEffect: {fileID: 1512181766}
+  volumeSlider: {fileID: 2099626251}
+  sfxSlider: {fileID: 1746765945}
 --- !u!82 &1273487422
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7245,6 +7247,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicVolumeSetter, Assembly-CSharp
         m_MethodName: SetSFX
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1273487420}
+        m_TargetAssemblyTypeName: MusicVolumeSetter, Assembly-CSharp
+        m_MethodName: SaveSFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9516,6 +9530,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicVolumeSetter, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1273487420}
+        m_TargetAssemblyTypeName: MusicVolumeSetter, Assembly-CSharp
+        m_MethodName: SaveVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
