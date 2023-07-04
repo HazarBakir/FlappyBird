@@ -141,9 +141,9 @@ MonoBehaviour:
   pointCounter: 0
   jumpVelocity: 8
   birdAlive: 0
-  point_counter: {fileID: 0}
+  point_counter: {fileID: 1674196534777595459, guid: 549f548aa15edb84cbed74ee7721baf2, type: 3}
   circleCollider: {fileID: 3009898591277761167}
-  myCodeComponent: {fileID: 0}
+  myCodeComponent: {fileID: 3009898591277761164}
   jumpSoundEffect: {fileID: 1512181766}
   deathSoundEffect: {fileID: 1512181771}
 --- !u!82 &1512181766
@@ -158,7 +158,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.15128283
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -254,7 +254,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5fdb13d3756c84fecac96f5a2d124370, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.15128283
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
