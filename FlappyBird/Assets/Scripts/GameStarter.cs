@@ -21,7 +21,7 @@ public class GameStarter : MonoBehaviour
         player.SetActive(false);
         ground.SetActive(false);
         gamecontroller.SetActive(false);
-
+        
         
     }
 
@@ -40,7 +40,7 @@ public class GameStarter : MonoBehaviour
             gamecontroller.SetActive(true);
             player.SetActive(true);
             ground.SetActive(true);
-            pointCounter.enabled = true; 
+            pointCounter.enabled = true;
         }
         
     }
