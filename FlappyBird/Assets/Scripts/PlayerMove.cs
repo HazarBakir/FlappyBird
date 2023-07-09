@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
+        pointCounter = 0;
         rBody = GetComponent<Rigidbody2D>();
         birdAlive = true;
         Jump();
@@ -28,6 +29,10 @@ public class PlayerMove : MonoBehaviour
         {
             Jump();
             jumpSoundEffect.Play();
+        }
+        if (pointCounter == 0 && !birdAlive)
+        {
+            PlayerPrefs.SetInt("Score", 0);
         }
     }
 
